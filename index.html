@@ -14,56 +14,268 @@
       body {
         font-family: "Orbitron-VariableFont_wght";
       }
+      @keyframes scanPulse {
+        0% {
+          width: 60%;
+        }
+        50% {
+          width: 20%;
+        }
+        100% {
+          width: 60%;
+        }
+      }
     </style>
   </head>
   <body class="m-0 bg-[#000] text-sky-500">
     <header
-      class="w-full mx-auto bg-neutral-800 backdrop-blur-md border-b border-b-2px border-yellow-300"
+      class="w-full mx-auto bg-neutral-800 backdrop-blur-md border-b border-b-1 border-yellow-300"
     >
       <nav>
         <div class="flex items-center py-3">
-          <a href="#" class="font-bold text-4xl px-2">RIPPERDOC VICTOR</a>
+          <a
+            href="#"
+            class="font-bold text-4xl px-2 font-bold text-sky-400 [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)]"
+            >RIPPERDOC VICTOR</a
+          >
 
           <ul class="mx-auto flex gap-8">
-            <li>
+            <li class="relative group">
               <a
                 href="#"
-                class="px-5 py-2 text-sky-300 text-lg outline-none hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_8px_rgba(34,211,238,0.7)] transition"
-                >IMPLANTS</a
+                class="px-5 py-2 text-sky-300 text-lg outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:text-sky-400 transition flex items-center"
+                >IMPLANTS
+                <svg
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <ul
+                class="absolute hidden group-focus-within:block bg-neutral-800 border-1 border-yellow-300 shadow-lg rounded-md px-1 py-2 w-40 mt-4 z-50"
               >
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none hover:outline [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Optical Implants</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Neural Implants</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Arm & Leg Replacements</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Subdermal Armor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-red-400 block p-2 [text-shadow:0_0_5px_rgba(255,60,60,0.9),0_0_10px_rgba(255,60,60,0.6),0_0_20px_rgba(255,60,60,0.3)] outline-none hover:outline hover:outline-2 hover:outline-red-400/30 hover:outline-solid hover:shadow-[0_0_10px_rgba(255,60,60,0.7)]"
+                    >Military Grade</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="px-5 py-2 text-sky-300 text-lg outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:text-sky-400 transition flex items-center"
+                >UPGRADES
+                <svg
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <ul
+                class="absolute hidden group-focus-within:block bg-neutral-800 border-1 border-yellow-300 shadow-lg rounded-md px-1 py-2 w-40 mt-4 z-50"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Performance Boosts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Reflex Tuners</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Overclock Mods</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Black Market Mods</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative group">
+              <a
+                href="#"
+                class="px-5 py-2 text-sky-300 text-lg outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:text-sky-400 transition flex items-center"
+                >PROCEDURES
+                <svg
+                  class="w-4 h-4 ml-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </a>
+              <ul
+                class="absolute hidden group-focus-within:block bg-neutral-800 border-1 border-yellow-300 shadow-lg rounded-md px-1 py-2 w-40 mt-4 z-50"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Installation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Removal</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Diagnostics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block p-2 outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.7)] hover:text-sky-400"
+                    >Emergency Repair</a
+                  >
+                </li>
+              </ul>
             </li>
             <li>
               <a
                 href="#"
-                class="px-5 py-2 text-sky-300 text-lg outline-none hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_8px_rgba(34,211,238,0.7)] transition"
-                >UPGRADES</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="px-5 py-2 text-sky-300 text-lg outline-none hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_8px_rgba(34,211,238,0.7)] transition"
-                >PROCEDURES</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="px-5 py-2 text-sky-300 text-lg outline-none hover:outline hover:outline-2 hover:outline-offset-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_8px_rgba(34,211,238,0.7)] transition"
+                class="px-5 py-2 text-sky-300 text-lg outline-none [text-shadow:0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_5px_rgba(56,189,248,0.9),0_0_10px_rgba(56,189,248,0.6),0_0_20px_rgba(56,189,248,0.3)] hover:text-sky-400 transition flex items-center"
                 >THE CLINIC</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="px-5 py-2 text-sky-300 text-lg outline-none hover:outline hover:outline-2 hover:outline-cyan-400/60 hover:outline-solid hover:shadow-[0_0_10px_rgba(34,211,238,0.8)] transition"
-                >GET AUGMENTEDC</a
+                class="px-5 py-2 text-yellow-300 text-lg outline-none font-bold [text-shadow:0_0_5px_rgba(255,230,80,0.9),0_0_10px_rgba(255,230,80,0.6),0_0_20px_rgba(255,230,80,0.3)] hover:outline hover:outline-2 hover:outline-yellow-400/60 hover:outline-solid hover:shadow-[0_0_5px_rgba(255,230,80,0.9),0_0_10px_rgba(255,230,80,0.6),0_0_20px_rgba(255,230,80,0.3)] hover:text-yellow-600 transition flex items-center"
+                >GET AUGMENTED</a
               >
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="grid grid-cols-[1fr_3fr_1fr]">
+      <section class="p-3 mt-4 mx-2 border border-yellow-300">
+        <div
+          class="flex justify-center font-bold border-b border-b-1 border-yellow-300 animate-pulse"
+        >
+          <span class="text-green-300">SCANNING SUBJECT . . .</span>
+        </div>
+        <div class="flex flex-col">
+          <div class="pt-3 flex justify-between">
+            <span>Neural Activity<span class="font-bold">:</span></span>
+            <span class="text-emerald-300 border-b border-b-1 border-green-500"
+              >STABLE</span
+            >
+          </div>
+          <div
+            class="mt-1 h-0.5 shadow-[0_0_8px_rgba(56,189,248,0.8)] bg-cyan-600 shadow-[0_0_6px_rgba(8,145,178,0.6)] animate-[scanPulse_4s_ease-in-out_infinite] rounded flex justify-between"
+          ></div>
+        </div>
+        <div class="flex flex-col">
+          <div class="pt-3 flex justify-between">
+            <span>Cyberware Slots<span class="font-bold">:</span></span>
+            <span class="text-emerald-300 border-b border-b-1 border-green-500"
+              >6/12 USED</span
+            >
+          </div>
+          <div
+            class="mt-2 h-0.5 shadow-[0_0_8px_rgba(56,189,248,0.8)] bg-emerald-600 shadow-[0_0_6px_rgba(8,145,178,0.6)] w-2/4 rounded flex justify-between"
+          ></div>
+        </div>
+        <div class="flex flex-col">
+          <div class="pt-3 flex justify-between">
+            <span>Immunity Level<span class="font-bold">:</span></span>
+            <span class="text-amber-400 border-b border-b-1 border-amber-600"
+              >72%</span
+            >
+          </div>
+          <div
+            class="mt-2 h-0.5 shadow-[0_0_8px_rgba(56,189,248,0.8)] bg-yellow-600 shadow-[0_0_6px_rgba(8,145,178,0.6)] w-2/3 rounded flex justify-between"
+          ></div>
+        </div>
+        <div class="pt-3 flex justify-between">
+          <span>Risk Factor<span class="font-bold">:</span></span>
+          <span class="text-green-300 border-b border-b-1 border-green-500"
+            >MODERATE</span
+          >
+        </div>
+        <div class="pt-3 flex justify-between">
+          <span>Implant Compatibility<span class="font-bold">:</span></span>
+          <span class="text-amber-400 border-b border-b-1 border-amber-600"
+            >PARTIAL</span
+          >
+        </div>
+      </section>
+      <div class="flex justify-center">test 2</div>
+      <div class="flex justify-center">test 3</div>
+    </main>
   </body>
 </html>
