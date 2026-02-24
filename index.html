@@ -27,25 +27,21 @@
       }
     </style>
   </head>
-  <body
-    class="m-0 bg-[#000] text-sky-500 min-h-screen flex flex-col bg-black lg:w-full md:w-full sm:w-full"
-  >
+  <body class="m-0 bg-[#000] text-sky-500 min-h-screen flex flex-col bg-black">
     <header
       class="w-full mx-auto bg-[#000] backdrop-blur-md border-b border-b-1 border-emerald-400"
     >
       <div class="flex justify-center py-3">
         <span
-          class="font-bold text-4xl px-2 font-bold text-emerald-400 [text-shadow:0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
+          class="font-bold text-4xl px-2 font-bold text-emerald-400 [text-shadow:0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)] max-sm:text-base"
           >AUGMENTATIONS COMPATIBILITY SCAN v4.2</span
         >
       </div>
     </header>
     <main
-      class="grid content-start grid-cols-[1fr_3fr_1fr] auto-rows-min flex-1 gap-2 p-2"
+      class="xl:grid content-start grid-cols-1 md:grid-cols-[minmax(250px,1fr)_minmax(300px,2fr)_minmax(250px,1fr)] auto-rows-min flex-1 gap-2 p-2"
     >
-      <section
-        class="mt-4 mx-2 col-start-1 row-start-1 flex flex-col self-start"
-      >
+      <section class="mt-4 mx-2 flex flex-col self-start">
         <div
           class="p-3 border border-emerald-300 shadow-[0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
         >
@@ -166,9 +162,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="p-3 mt-4 mx-2 lg:col-start-2 lg:row-start-1 md:col-start-1 md:row-srart-1 max-sm:col-start-1 sm:row-start-2 grid grid-cols-[1fr_1fr_1fr]"
-      >
+      <section class="p-3 mt-4 mx-2 sm:block lg:grid grid-cols-[1fr_1fr_1fr]">
         <div class="flex justify-center flex-col col-start-2 h-[400px]">
           <div
             class="text-emerald-300 font-bold border-b border-b-1 border-emerald-300 text-center"
@@ -402,7 +396,9 @@
             </g>
           </svg>
         </div>
-        <div class="col-start-1 row-start-1 text-center">
+        <div
+          class="col-start-1 row-start-1 text-center lg:mt-0 sm:mt-5 max-sm:mt-5"
+        >
           <div>
             <span
               class="border-b border-b-1 border-emerald-300 text-emerald-300 font-bold [text-shadow:0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
@@ -582,7 +578,9 @@
             </details>
           </div>
         </div>
-        <div class="col-start-3 row-start-1 text-center">
+        <div
+          class="col-start-3 row-start-1 text-center lg:mt-0 sm:mt-5 max-sm:mt-5"
+        >
           <span
             class="border-b border-b-1 border-emerald-300 text-emerald-300 font-bold [text-shadow:0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
             >AUGMENTATION SLOTS
@@ -762,7 +760,7 @@
         </div>
       </section>
       <section
-        class="p-3 mt-4 mx-2 lg:col-start-3 lg:row-start-1 md:col-start-1 md:row-start-3 md:p-2 md:mb-32 sm:col-start-1 sm:row-start-3 sm:p-2 sm:mb-32 max-sm:col-start-1 max-sm:row-start-3 max-sm:p-2 max-sm:mb-32 border border-emerald-300 flex flex-col shadow-[0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
+        class="p-3 mt-4 mx-2 md:p-2 sm:p-2 sm:mb-32 max-sm:p-2 max-sm:mb-32 border border-emerald-300 flex flex-col shadow-[0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
       >
         <div
           class="text-emerald-300 font-bold border-b border-b-1 border-emerald-300 text-center"
