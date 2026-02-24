@@ -27,7 +27,9 @@
       }
     </style>
   </head>
-  <body class="m-0 bg-[#000] text-sky-500 min-h-screen flex flex-col bg-black">
+  <body
+    class="m-0 bg-[#000] text-sky-500 min-h-screen flex flex-col bg-black lg:w-full md:w-full sm:w-full"
+  >
     <header
       class="w-full mx-auto bg-[#000] backdrop-blur-md border-b border-b-1 border-emerald-400"
     >
@@ -38,7 +40,9 @@
         >
       </div>
     </header>
-    <main class="grid content-start grid-cols-[1fr_3fr_1fr] flex-1">
+    <main
+      class="grid content-start grid-cols-[1fr_3fr_1fr] auto-rows-min flex-1 gap-2 p-2"
+    >
       <section
         class="mt-4 mx-2 col-start-1 row-start-1 flex flex-col self-start"
       >
@@ -163,7 +167,7 @@
         </div>
       </section>
       <section
-        class="p-3 mt-4 mx-2 col-start-2 row-start-1 grid grid-cols-[1fr_1fr_1fr]"
+        class="p-3 mt-4 mx-2 lg:col-start-2 lg:row-start-1 md:col-start-1 md:row-srart-1 max-sm:col-start-1 sm:row-start-2 grid grid-cols-[1fr_1fr_1fr]"
       >
         <div class="flex justify-center flex-col col-start-2 h-[400px]">
           <div
@@ -758,7 +762,7 @@
         </div>
       </section>
       <section
-        class="p-3 mt-4 mx-2 col-start-3 row-start-1 border border-emerald-300 flex flex-col shadow-[0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
+        class="p-3 mt-4 mx-2 lg:col-start-3 lg:row-start-1 md:col-start-1 md:row-start-3 md:p-2 md:mb-32 sm:col-start-1 sm:row-start-3 sm:p-2 sm:mb-32 max-sm:col-start-1 max-sm:row-start-3 max-sm:p-2 max-sm:mb-32 border border-emerald-300 flex flex-col shadow-[0_0_5px_rgba(52,211,153,0.9),0_0_10px_rgba(52,211,153,0.6),0_0_20px_rgba(52,211,153,0.3)]"
       >
         <div
           class="text-emerald-300 font-bold border-b border-b-1 border-emerald-300 text-center"
